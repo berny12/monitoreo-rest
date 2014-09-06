@@ -1,5 +1,6 @@
 package com.synergyj.cursos.webservices.rest;
 
+import javax.inject.Singleton;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -13,13 +14,15 @@ import com.synergyj.curso.web.services.ServicioMonitoreoImpl;
  * Root resource (exposed at "myresource" path)
  */
 @Path("/getMonitoreo")
+@Singleton
 public class DatosMonitoreo {
 
 	/*
 	 * creamos una intacica del servicio
 	 */
 	//para evitar que se instancie mas de una vez y genere daos extraños
-	static private ServicioMonitoreo servicioMonitoreo = new ServicioMonitoreoImpl();
+	//static private ServicioMonitoreo servicioMonitoreo = new ServicioMonitoreoImpl();
+     private ServicioMonitoreo servicioMonitoreo = new ServicioMonitoreoImpl();
 	
     /**
      * Method handling HTTP GET requests. The returned object will be sent
