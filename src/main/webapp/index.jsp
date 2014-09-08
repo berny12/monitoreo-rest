@@ -7,6 +7,6 @@
     
     <br>
     
-    <a href ="EnvioMonitoreo?tiempo=5" > Prueba Monitoreo</a>
+    <a href ="getMonitoreo?tiempo=5" > Prueba Monitoreo</a>
 </body>
 </html>

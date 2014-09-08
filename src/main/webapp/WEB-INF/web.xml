@@ -11,8 +11,16 @@
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
+    <servlet>
+    	<servlet-name>EnvioMonitoreo</servlet-name>
+    	<servlet-class>com.synergyj.curso.web.servlet.EnvioMonitoreo</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Jersey Web Application</servlet-name>
         <url-pattern>/resources/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>EnvioMonitoreo</servlet-name>
+    	<url-pattern>/getMonitoreo</url-pattern>
     </servlet-mapping>
 </web-app>
